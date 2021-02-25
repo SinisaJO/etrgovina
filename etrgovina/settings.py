@@ -97,27 +97,17 @@ LOGGING = {
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-
-
 DATABASES = {
-
     'default': {
-
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-
-        'NAME': ‘<db_name>’,
-
-        'USER': '<db_username>',
-
-        'PASSWORD': '<password>',
-
-        'HOST': '<db_hostname_or_ip>',
-
-        'PORT': '<db_port>',
-
+        'NAME': 'd9r3gfv49kmeu1',
+        'USER': 'lkqvpvqbscgwci',
+        'PASSWORD': 'e342d1732cccdc5bd91025f9e5e76475d52213b9dc30c0b8072036c096d0264f',
+        'HOST': 'ec2-18-207-95-219.compute-1.amazonaws.com',
+        'PORT': '',
     }
-
 }
+
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_from_env)
