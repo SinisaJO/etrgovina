@@ -306,14 +306,7 @@ h1, .sub-heading {
 .cart-totals-value {
   font-size: 2rem;
 }
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  text-align: center;
-}
+
 ._column.checkout {
   text-align: right;
   padding: 0;
