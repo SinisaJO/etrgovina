@@ -1,0 +1,49 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<div class="main">
+    <section class="shopping-cart">
+      <header class="_grid cart-totals">
+        <div class="_column checkout">
+          <a class="_btn checkout-btn entypo-forward" href="{% url 'prodavnica' %}">Nastavi kupovinu</a>
+        </div>
+        <div class="_column total" id="totalCtr">
+          <div class="cart-totals-key">Ukupno</div>
+          <div class="cart-totals-value">{{narudzbina.ukupno_korpa|floatformat:2}}€</div>
+        </div>
+        <div class="_column checkout">
+          <a class="_btn checkout-btn entypo-forward" href="{% url 'placanje' %}">Placanje</a>
+        </div>
+      </header>
+
+
+      <br>
+			<div class="box-element">
+				<div class="cart-row">
+					<div style="flex:2"></div>
+					<div style="flex:2"><strong>Proizvod</strong></div>
+					<div style="flex:1"><strong>Cena</strong></div>
+					<div style="flex:1"><strong>Kolicina</strong></div>
+					<div style="flex:1"><strong>Ukupno</strong></div>
+				</div>
+				{% for kartica in kartica %}
+				<div class="cart-row">
+					<div style="flex:2"><img class="row-image" src="{{kartica.proizvod.slikaURL}}"></div>
+					<div style="flex:2"><p>{{kartica.proizvod.ime}}</p></div>
+					<div style="flex:1"><p>{{kartica.proizvod.cena|floatformat:2}}€</p></div>
+					<div style="flex:1">
+						<p class="quantity">{{kartica.kolicina}}</p>
+						<div class="quantity">
+							<img data-proizvod="{{kartica.proizvod.id}}" data-action="dodaj" class="chg-quantity update-korpa" src="{% static  'slike/arrow-up.png' %}">
+					
+							<img data-proizvod="{{kartica.proizvod.id}}" data-action="oduzmi" class="chg-quantity update-korpa" src="{% static  'slike/arrow-down.png' %}">
+						</div>
+					</div>
+					<div style="flex:1"><p>{{kartica.ukupna_cena|floatformat:2}}€</p></div>
+				</div>
+				{% endfor %}
+			</div>
+    </section>
+  </div>
+  {% endblock content %}
+  

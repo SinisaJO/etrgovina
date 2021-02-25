@@ -1,0 +1,25 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<div class="row">
+    {% for proizvod in proizvodi %}
+	<div class="col-lg-4">
+        <a href="{{proizvod.get_absolute_url}}"><img class="thumbnail" src={{proizvod.slikaURL}}></a>
+		<div class="box-element product">
+        <h6><strong>{{proizvod.ime}}</strong></h6>
+        <hr>
+
+        <button data-proizvod="{{proizvod.id}}" data-action="dodaj" class="btn btn-outline-secondary add-btn update-korpa">Dodaj u korpu</button>
+        <a class="btn btn-out-success" href="{{proizvod.get_absolute_url}}">Više</a>
+        <h4 style="display: inline-block; float: right">
+            <strong>
+                <p class="lead">
+                    <span>{{ proizvod.cena|floatformat:2}}€</span>
+                  </p>
+            </strong></h4>
+
+		</div>
+	</div>
+    {% endfor %}
+</div>
+{% endblock content %}
