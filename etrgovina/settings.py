@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '*-jgp!^x%=$gy09oxw48gdxs$0z+jccyhla4ndllkh++_*0r%m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'etrgovina.herokuapp.com', '127.0.0.1'
@@ -105,7 +105,7 @@ DATABASES = {
 }
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'] = dj_database_url.parse('postgres://...', conn_max_age=600)
+DATABASES['default'].update(db_from_env)
 
 
 # Password validation
