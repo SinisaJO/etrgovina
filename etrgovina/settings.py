@@ -28,7 +28,7 @@ SECRET_KEY = '*-jgp!^x%=$gy09oxw48gdxs$0z+jccyhla4ndllkh++_*0r%m'
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '127.0.0.1', 'e-trgovina.herokuapp.com'
+    'e-trgovina.herokuapp.com', '127.0.0.1'
 ]
 
 
