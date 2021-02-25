@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '*-jgp!^x%=$gy09oxw48gdxs$0z+jccyhla4ndllkh++_*0r%m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'e-trgovina.herokuapp.com', '127.0.0.1'
