@@ -78,21 +78,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'etrgovina.wsgi.application'
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'console': {
-            'class': 'logging.StreamHandler',
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['console'],
-             'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
-        },
-    },
-}
+
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
