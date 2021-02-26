@@ -90,7 +90,7 @@ class NaruceniProizvod(models.Model):
         return ukupno
 
     def __str__(self):
-        return self.proizvod.ime
+        return self.proizvod.id
 
     class Meta:
         verbose_name_plural = 'NaruceniProizvod'    
