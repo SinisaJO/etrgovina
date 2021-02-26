@@ -177,7 +177,7 @@ h1, .sub-heading {
   text-rendering: optimizeLegibility;
 }
 ._btn {
-  font-family: 'Courier New', monospace;
+  font-family: 'Courier New', monospace, bold;
   border-radius: 0.50em;
   color: black;
   display: inline-block;
