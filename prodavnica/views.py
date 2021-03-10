@@ -130,10 +130,8 @@ def procesNarudzbine(request):
             kupac.ime = ime
             kupac.save()
 
-            narudzbina = Narudzbina.objects.create(
-                kupac=kupac,
-                status_narudzbine=False,
-                )
+            narudzbina = Narudzbina.objects.create(kupac=kupac, status_narudzbine=False,)
+            
             for kartice in kartica:
                 proizvod = Proizvod.objects.get(id=kartice['proizvod']['id'])
 

@@ -84,7 +84,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .btn{
-  font-family: URW Gothic L, sans-serif;
+
 }
 
 .row-image{
@@ -226,7 +226,7 @@ h1, .sub-heading {
   padding: .5rem;
 }
 .product-name {
-  font: 300 2.4em/1 "Lato", sans-serif;
+  font: 300 2.4em/1 URW Gothic L, sans-serif;
   letter-spacing: -.025em;
   margin: 2.5em 0 .125em;
 }
