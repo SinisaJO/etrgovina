@@ -5,12 +5,12 @@ from django.shortcuts import reverse
 
 
 class Kupac(models.Model):
-    korisnik = models.OneToOneField(User, null=True, blank=True, on_delete=models.CASCADE)
-    ime = models.CharField(max_length=200, null=True)
-    email = models.EmailField()
+    kupac = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
+    name = models.CharField(max_length=200, null=True)
+    email = models.CharField(max_length=200, null=True)
 
     def __str__(self):
-        return self.ime
+        return self.name
     
     class Meta:
         verbose_name_plural = 'Kupac'
@@ -90,7 +90,7 @@ class NaruceniProizvod(models.Model):
         return ukupno
 
     def __str__(self):
-        return self.proizvod.ime
+        return str(self.id)
 
     class Meta:
         verbose_name_plural = 'NaruceniProizvod'    

@@ -1,11 +1,9 @@
-body{
-	background-color: hsl(0, 0%, 98%);
-}
 
 .dugme-pocetna {
-  color:rgb(5, 4, 4);
-  font-family: 'Courier New', monospace;
+  color:black;
+  font-family: URW Gothic L, sans-serif;
   font-size: 0.6cm;
+  font-weight: 600;
 }
 
 
@@ -49,7 +47,7 @@ h1,h2,h3,h4,h5,h6{
   border-radius: 0 0 150px 150px;
 }
 .btn1{
-  font-family: 'Courier New', monospace;
+  font-family: URW Gothic L, sans-serif;
   color: #ececec;
   background-color: black;
   cursor: pointer;
@@ -57,6 +55,7 @@ h1,h2,h3,h4,h5,h6{
   font-size: 1.2rem;
   line-height: 1.5;
   border-radius: 8px;
+  font-weight: 700;
 }
 
 .bg-dark{
@@ -85,7 +84,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .btn{
-  font-family: 'Courier New', monospace;
+  font-family: URW Gothic L, sans-serif;
 }
 
 .row-image{
@@ -137,9 +136,7 @@ h1,h2,h3,h4,h5,h6{
 
 /**Cart.html**/
 
-
-
-[class*="entypo-"]:before {font-family: 'Courier New', monospace;}
+[class*="entypo-"]:before {font-family: URW Gothic L, sans-serif;}
 body {
   background-color: #ecf0f1;
 }
@@ -177,7 +174,7 @@ h1, .sub-heading {
   text-rendering: optimizeLegibility;
 }
 ._btn {
-  font-family: 'Courier New', monospace;
+  font-family: URW Gothic L, sans-serif;
   border-radius: 0.50em;
   color: black;
   display: inline-block;
@@ -229,7 +226,7 @@ h1, .sub-heading {
   padding: .5rem;
 }
 .product-name {
-  font: 300 2.4em/1 "Lato", sans-serif;
+  font: 300 2.4em/1 URW Gothic L, sans-serif;
   letter-spacing: -.025em;
   margin: 2.5em 0 .125em;
 }
@@ -306,6 +303,7 @@ h1, .sub-heading {
 .cart-totals-value {
   font-size: 2rem;
 }
+
 ._column.checkout {
   text-align: right;
   padding: 0;

@@ -34,9 +34,8 @@
 					<div style="flex:1">
 						<p class="quantity">{{kartica.kolicina}}</p>
 						<div class="quantity">
-							<img data-proizvod="{{kartica.proizvod.id}}" data-action="dodaj" class="chg-quantity update-korpa" src="{% static  'slike/arrow-up.png' %}">
-					
-							<img data-proizvod="{{kartica.proizvod.id}}" data-action="oduzmi" class="chg-quantity update-korpa" src="{% static  'slike/arrow-down.png' %}">
+						<img data-proizvod="{{kartica.proizvod.id}}" data-action="dodaj" class="chg-quantity update-korpa" src="{% static  'slike/arrow-up.png' %}">
+						<img data-proizvod="{{kartica.proizvod.id}}" data-action="oduzmi" class="chg-quantity update-korpa" src="{% static  'slike/arrow-down.png' %}">
 						</div>
 					</div>
 					<div style="flex:1"><p>{{kartica.ukupna_cena|floatformat:2}}€</p></div>

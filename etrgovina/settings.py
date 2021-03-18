@@ -28,7 +28,7 @@ SECRET_KEY = '*-jgp!^x%=$gy09oxw48gdxs$0z+jccyhla4ndllkh++_*0r%m'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'e-trgovina.herokuapp.com', '127.0.0.1'
+    'etrgovina.herokuapp.com', '127.0.0.1'
 ]
 
 
@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'prodavnica.apps.ProdavnicaConfig',#ovo je aplikacija koju smo kreirali
-    
+    'autentifikacija.apps.AutentifikacijaConfig',
 ]
 
 MIDDLEWARE = [
@@ -79,15 +79,23 @@ TEMPLATES = [
 WSGI_APPLICATION = 'etrgovina.wsgi.application'
 
 
+
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+import psycopg2
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd9r3gfv49kmeu1',
+        'USER': 'lkqvpvqbscgwci',
+        'PASSWORD': 'e342d1732cccdc5bd91025f9e5e76475d52213b9dc30c0b8072036c096d0264f',
+        'HOST': 'ec2-18-207-95-219.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
+
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_from_env)

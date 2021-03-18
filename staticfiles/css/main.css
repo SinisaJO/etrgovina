@@ -4,7 +4,7 @@ body{
 
 .dugme-pocetna {
   color:rgb(5, 4, 4);
-  font-family: 'Courier New', monospace;
+  font-family: URW Gothic L, sans-serif;
   font-size: 0.6cm;
 }
 
@@ -49,7 +49,7 @@ h1,h2,h3,h4,h5,h6{
   border-radius: 0 0 150px 150px;
 }
 .btn1{
-  font-family: 'Courier New', monospace;
+  font-family: URW Gothic L, sans-serif;
   color: #ececec;
   background-color: black;
   cursor: pointer;
@@ -85,7 +85,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .btn{
-  font-family: 'Courier New', monospace;
+  font-family: URW Gothic L, sans-serif;
 }
 
 .row-image{
@@ -139,7 +139,7 @@ h1,h2,h3,h4,h5,h6{
 
 
 
-[class*="entypo-"]:before {font-family: 'Courier New', monospace;}
+[class*="entypo-"]:before {font-family: URW Gothic L, sans-serif;}
 body {
   background-color: #ecf0f1;
 }
@@ -177,7 +177,7 @@ h1, .sub-heading {
   text-rendering: optimizeLegibility;
 }
 ._btn {
-  font-family: 'Courier New', monospace;
+  font-family: URW Gothic L, sans-serif;
   border-radius: 0.50em;
   color: black;
   display: inline-block;

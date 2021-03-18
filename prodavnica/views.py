@@ -72,9 +72,6 @@ def placanje(request):
     sadrzaj = {'kartica': kartica, 'narudzbina': narudzbina, 'proizvodiKorpa': proizvodiKorpa}
     return render(request, 'placanje.html', sadrzaj)
 
-     
-
-
 
 def updateProizvod(request):
 	data = json.loads(request.body)
@@ -128,10 +125,8 @@ def procesNarudzbine(request):
             kupac.ime = ime
             kupac.save()
 
-            narudzbina = Narudzbina.objects.create(
-                kupac=kupac,
-                status_narudzbine=False,
-                )
+            narudzbina = Narudzbina.objects.create(kupac=kupac, status_narudzbine=False,)
+            
             for kartice in kartica:
                 proizvod = Proizvod.objects.get(id=kartice['proizvod']['id'])
 
