@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'prodavnica.apps.ProdavnicaConfig',#ovo je aplikacija koju smo kreirali
-    
+    'autentifikacija.apps.AutentifikacijaConfig',
 ]
 
 MIDDLEWARE = [

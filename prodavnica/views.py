@@ -72,11 +72,6 @@ def placanje(request):
     sadrzaj = {'kartica': kartica, 'narudzbina': narudzbina, 'proizvodiKorpa': proizvodiKorpa}
     return render(request, 'placanje.html', sadrzaj)
 
-def registracija(request):
-
-    return render(request, 'registracija.html')     
-
-
 
 def updateProizvod(request):
 	data = json.loads(request.body)
